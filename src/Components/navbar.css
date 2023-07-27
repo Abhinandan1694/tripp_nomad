@@ -50,7 +50,7 @@
 .nav-item:hover {
     font-size: 15px;
     padding: 12px 8px;
-    background-color: rgb(63, 134, 18);
+    background-color:rgb(190, 201, 191) /*rgb(63, 134, 18);*/
 }
 
 .icon-word {
@@ -61,5 +61,5 @@
     transition: 0.16s ease-in-out;
 }
 .icon-word:hover{
-    font-size: 18px;
+    font-size: 20px;
 }
