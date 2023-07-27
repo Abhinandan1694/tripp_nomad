@@ -12,8 +12,8 @@ const Navbar = () => {
 
           {MenuItems.map((item, index) => {
             return <li key={index} className={item.cName}>
-                 <i className={item.icon}>
-                <span className="icon-word">{item.title}</span></i>
+                 <i className={item.icon}></i>
+                 <span className="icon-word">{item.title}</span>
             </li>
           })}
 

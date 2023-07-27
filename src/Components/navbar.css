@@ -28,33 +28,38 @@
 .navbar-menu {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items:center;
     font-family: sans-serif;
     width: 48%;
 }
 
 .nav-item {
-    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 10px;
     margin: 3px;
     background-color: none;
     border-radius: 6px;
     letter-spacing: 2.5px;
     list-style: none;
-    transition: 0.2s;
+    transition: 0.15s ease-in-out;
 }
 
+
 .nav-item:hover {
-    font-size: 18px;
-    padding: 13px 10px;
+    font-size: 15px;
+    padding: 12px 8px;
     background-color: rgb(63, 134, 18);
 }
 
 .icon-word {
-    padding: 5px;
-    font-size: 13px;
-    transition: 0.3s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    padding: 3px;
+    font-size: 14px;
+    transition: 0.16s ease-in-out;
 }
-
-.icon-word:hover {
+.icon-word:hover{
     font-size: 18px;
 }
