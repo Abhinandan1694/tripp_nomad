@@ -1,26 +1,23 @@
 import './navbar.css'
 import React from 'react'
-import { Link } from 'react-router-dom'
+
 
 const Navbar = () => {
 
 
   return (
-    <>
+    <React.Fragment>
       <nav className="navbar">
         <h1 className="navbar-brand">
           Trippy
         </h1>
         <ul className="navbar-menu">
           <li className="navbar-item">
-            <Link><i class="fa-duotone fa-house-user fa-2xs"></i>Home</Link>
+           <i className="fa-duotone fa-house-user fa-2xs"></i>Home
           </li>
-          <li className="navbar-item"></li>
-          <li className="navbar-item"></li>
-          <li className="navbar-item"></li>
         </ul>
       </nav>
-    </>
+    </React.Fragment>
   )
 }
 
