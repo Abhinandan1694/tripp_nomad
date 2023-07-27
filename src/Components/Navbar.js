@@ -1,7 +1,7 @@
 import "./navbar.css";
 import React from "react";
 import {MenuItems} from './MenuItems'
-import { padding } from "@mui/system";
+
 
 const Navbar = () => {
   return (

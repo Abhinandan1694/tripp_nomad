@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Dancing+Script:wght@700&family=Teko:wght@600&display=swap");
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -13,9 +15,14 @@
 }
 
 .navbar-brand {
-    font-family: sans-serif;
-    font-weight: 800;
-    font-size: 38px;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 900;
+    font-size: 50px;
+    transition: 0.2s;
+}
+
+.navbar-brand:hover {
+    font-size: 40px;
 }
 
 .navbar-menu {
@@ -27,24 +34,27 @@
 }
 
 .nav-item {
-    font-size: 10px;
-    margin: 3px;    
+    font-size: 12px;
+    margin: 3px;
     background-color: none;
     border-radius: 6px;
     letter-spacing: 2.5px;
     list-style: none;
-    transition: .2s;
+    transition: 0.2s;
 }
 
 .nav-item:hover {
-    font-size: 18px;   
-    padding: 13px 10px; 
+    font-size: 18px;
+    padding: 13px 10px;
     background-color: rgb(63, 134, 18);
 }
 
 .icon-word {
     padding: 5px;
-    font-size: 16px;
-    transition: .3s;
+    font-size: 13px;
+    transition: 0.3s;
 }
 
+.icon-word:hover {
+    font-size: 18px;
+}
