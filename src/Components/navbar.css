@@ -1,17 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Dancing+Script:wght@700&family=Teko:wght@600&display=swap");
 
 .navbar {
+    border-block:inherit ;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: rgb(190, 201, 191);
-    width: 95%;
+    width:auto;
     height: 75px;
     margin: 40px 30px;
     padding: 0 30px;
-    border-radius: 15px;
-    position: sticky;
+    border-radius: 15px;    
     box-shadow: 0px 5px 10px rgb(93, 119, 91);
+   
 }
 
 .navbar-brand {
@@ -28,29 +29,30 @@
 .navbar-menu {
     display: flex;
     justify-content: space-between;
-    align-items:center;
+    align-items: center;
     font-family: sans-serif;
-    width: 48%;
+    width: 45%;
+    list-style: none;
 }
 
 .nav-item {
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-size: 10px;
-    margin: 3px;
-    background-color: none;
+    font-size: 11px;
+    margin: 0px 1px;
     border-radius: 6px;
-    letter-spacing: 2.5px;
-    list-style: none;
+    letter-spacing: .5px;
     transition: 0.15s ease-in-out;
+    white-space: nowrap;
+    cursor: pointer;
 }
 
 
 .nav-item:hover {
     font-size: 15px;
     padding: 12px 8px;
-    background-color:rgb(190, 201, 191) /*rgb(63, 134, 18);*/
+    background-color: none;
 }
 
 .icon-word {
@@ -60,6 +62,106 @@
     font-size: 14px;
     transition: 0.16s ease-in-out;
 }
-.icon-word:hover{
+
+.icon-word:hover {
     font-size: 20px;
+}
+
+.navbar-toggle {
+    display: none;
+}
+
+.signup-btn {
+    padding: 8px 4px;
+    color: white;
+    border-radius: 5px;
+    background-color: rgb(32, 25, 25);
+    font-size: 15px;
+    font-family: 'Comfortaa', cursive;
+    transition: .16s ease-in-out;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+.signup-btn:hover {
+    color: rgb(0, 0, 0);
+    font: bolder;
+    font-size: 20px;
+    padding: 8px 6px;
+    border: solid;
+    border-radius: 10px;
+    background-color: inherit;
+}
+
+@media screen and (max-width: 1050px) {
+    .navbar {
+        position: relative;
+        border-radius: 12px ;
+        border-bottom-left-radius: 2px;
+        border-bottom-right-radius: 2px;
+        box-shadow: 0px 8px 12px  rgb(54, 59, 53);
+    }
+    .navbar-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-color: rgb(255, 255, 255);
+        width: 100% !important;
+        height: auto;        
+        opacity: 0;
+        padding: 100px 0 30px 0;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        align-items: center;
+        border-radius: 15px;             
+        font-family: sans-serif;
+        list-style: none;
+        transition: .2s;
+    }
+    .navbar-menu.active {
+        opacity: 1;
+        z-index: -1;
+        left: 0;
+    }
+    .nav-item {
+        display: block;
+        padding: 2rem 0;
+        width: 100%;
+        font-size: 17px;
+        
+    }
+    .nav-item span {
+        font-size: 19px;
+    }
+    
+    .nav-item:hover {
+        padding: 2rem 0;
+        font-size: 20px !important;
+        background-color: /*rgb(190, 201, 191)*/rgb(90, 188, 68);
+    }
+    .signup-btn{
+        font-size: 1.2rem;
+        padding: 1rem;
+        margin: 1rem;
+        width: 100%;
+    }
+    .signup-btn:hover {
+        padding: 1rem;
+        color: rgb(255, 255, 255); 
+        font-size: 1.5rem; 
+        border: none;
+        background-color: black;      
+    }
+    .navbar-toggle {
+        display: block;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .navbar-menu {
+        width: 51%;
+    }
+
 }

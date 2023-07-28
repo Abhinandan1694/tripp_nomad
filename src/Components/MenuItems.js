@@ -24,10 +24,10 @@ export const MenuItems = [
         cName : "nav-item",
         icon : "fas fa-address-book fa-2xl"
     },
-    {
+    /*{
         title : "Sign Up",
         url : "/signup",
         cName : "signup-btn",
-    }
+    }*/
 ]
 
