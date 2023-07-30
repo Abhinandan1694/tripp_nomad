@@ -161,6 +161,7 @@
     }
     .navbar-toggle {
         display: block;
+        font-size: 30px;
     }
 }
 

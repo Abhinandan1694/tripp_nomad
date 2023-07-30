@@ -1,6 +1,5 @@
 import "./App.css";
 import React from "react";
-import Navbar from "./Components/Navbar";
 import Home from "./Routes/Home";
 import About from "./Routes/About"
 import Service from "./Routes/Service"
@@ -15,8 +14,7 @@ export default function App() {
         <Route path="/about" element={<About/>}/>
         <Route path="/service" element={<Service/>}/>
         <Route path="/contact" element={<Contact/>}/>
-      </Routes>
-      <Navbar />
+      </Routes>      
     </div>
   );
 }
