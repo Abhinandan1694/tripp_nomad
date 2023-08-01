@@ -18,9 +18,7 @@ const Navbar = () => {
     <React.Fragment>
       <nav className="navbar">
         <h1 className="navbar-brand">Trippy</h1>
-        <div className="navbar-toggle" onClick={HandleNavToggle}>
-          {navToggle ? <i className="fas fa-bars"></i> : <i className="fas fa-times"></i>}
-        </div>
+        
         <ul className={`navbar-menu ${navToggle ? " " : "active"}`}>
           {MenuItems.map((item, index) => {
             return <li key={index} className={item.cName}> 
@@ -32,6 +30,9 @@ const Navbar = () => {
           })}
           <button className="signup-btn" onClick={() => { <SignUp /> }}>Sign Up</button>
         </ul>
+        <div className="navbar-toggle" onClick={HandleNavToggle}>
+          {navToggle ? <i className="fas fa-bars"></i> : <i className="fas fa-times"></i>}
+        </div>
       </nav>
     </React.Fragment>
   );

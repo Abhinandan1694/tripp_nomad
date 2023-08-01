@@ -1,10 +1,19 @@
 import React from 'react'
+import Navbar from "../Components/Navbar"
+import Hero from "../Components/Hero"
+import ContactImg from "../assets/img2.jpg"
 
 const Contact = () => {
   return (
     <React.Fragment>
-        <h1>This is Contact</h1>
-    </React.Fragment>
+    <Navbar />
+    <Hero
+      cName="hero-about"
+      heroimg={ContactImg}
+      title="Contact"
+      btnClass="hide"
+    />
+  </React.Fragment>
   )
 }
 
