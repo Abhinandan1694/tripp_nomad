@@ -2,11 +2,12 @@ import React from 'react'
 import Navbar from "../Components/Navbar"
 import Hero from "../Components/Hero"
 import HeroImg from "../assets/img1.jpg"
+import Destination from "../Components/Destination"
 
 const Home = () => {
   return (
-    <React.Fragment>
-      <Navbar />
+    <React.Fragment>      
+      <Navbar />      
       <Hero
         cName="hero"
         heroimg={HeroImg}
@@ -16,6 +17,7 @@ const Home = () => {
         buttonText="Travel Plan"
         btnClass="show"
       />
+      <Destination/>
     </React.Fragment>
   )
 }
